@@ -1,6 +1,6 @@
 from pyspark import SparkContext
 
-sc = SparkContext("local","Map Transaction")
+sc = SparkContext("local","Map transformation")
 
 numbers=[1,2,3,4,5,6]
 
