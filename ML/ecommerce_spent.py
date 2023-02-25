@@ -37,7 +37,10 @@ LRModel = LR.fit(train_data)
 
 test_results = LRModel.evaluate(test_data)
 
-print("Top five predictions of test data",test_results.predictions.show(5))
+print("Top five predictions of test data")
+for i in test_results.predictions.head(5):
+    print(i)
+
 print('\n')
 print('\n')
 print("test data prediction RMSE:",test_results.rootMeanSquaredError)
